@@ -18,7 +18,7 @@
     background-color: hsl(180, 71%, 50%);
     color: white;
     border: none;
-    transition: 0,7s;
+    cursor: pointer;
 }
 .form__button:hover {
     background: hsl(180, 64%, 46%);
