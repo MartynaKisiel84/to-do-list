@@ -51,7 +51,7 @@
             `;
         }
 
-        document.querySelector(".js-tasks").innerHTML = htmlString;
+        document.querySelector(".js-task").innerHTML = htmlString;
 
         bindEvents();
     };
