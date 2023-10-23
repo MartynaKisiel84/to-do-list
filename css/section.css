@@ -1,6 +1,6 @@
 .section {
     margin: 10px 0;
-    box-shadow: 13px 15px 27px-57px hsl(240, 7%, 97%);
+    box-shadow: 0px 0px 5px hsl(240, 7%, 97%);
     max-width: 900px;
     background: hsl(0, 0%, 100%);
 }
@@ -8,12 +8,9 @@
     border-bottom: 1px solid hsl(0, 26%, 96%);
     margin: 0;
     padding: 20px;
+    font-size: 20px;
 }
-.section__body {
-    padding: 20px;
-    word-break: break-word;
-}
-section__container {
+.section__container {
     display: grid;
     grid-template-columns: 1fr auto auto;
     grid-gap: 20px;
@@ -21,6 +18,7 @@ section__container {
     align-items: center;
     list-style: none;
     border-bottom: 1px solid hsl(0, 4%, 91%);
+    padding: 20px;
 }
 @media(max-width:767px) {
     .section__container {
