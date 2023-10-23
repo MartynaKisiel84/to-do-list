@@ -1,20 +1,10 @@
 {
-    const tasks = [
-        {
-            content: "ugotować obiad",
-            done: false,
-        },
-        {
-            content: "iść na spacer z psem",
-            done: true,
-        },
-    ];
+    const tasks = [];
 
     const addNewTask = (newTaskContent) => {
         tasks.push({
             content: newTaskContent,
         })
-
         render();
     };
 
@@ -51,12 +41,12 @@
 
         for (const task of tasks) {
             htmlString += `
-               <li
-               class="list_item${task.done ? "list__item--done" : ""}"
-                >
-                <button class="js-done">zrobione?</button>
-                <button class="js-remove">usuń</button>
-                 ${task.content}
+               <li class="task_item">
+                   <button class="task__button task__button--done js-done">
+                   ${task.done ? "✔" : ""}
+                >/button>
+                <span class="task__content${task.done ? " task__content--done" : ""}">${task.content}</span>
+                <button class="task__button task__button--remove js-remove"></button>
                </li>
             `;
         }
@@ -70,14 +60,15 @@
     const onFormSubmit =  (event) => {
         event.preventDefault();
 
-        const newTaskContent = document.querySelector(".js.newTask").value.trim();
+        const newTaskItem = document.querySelector(".js-newTask");
+        const newTaskContent = newTaskItem.value.trim();
         
         
         if (newTaskContent === "") {
-            return;
+            addNewTask(newTaskContent);
+            newTaskItem.value = "";
         }
         
-        addNewTask(newTaskContent);
     };
 
     const init = () => {
