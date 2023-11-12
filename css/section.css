@@ -11,13 +11,6 @@
     font-size: 20px;
 }
 
-@media(max-width: 767px) {
-    .section__header {
-        display: flex;
-        justify-content: center;
-    }
-}
-
 .section__container {
     padding: 20px;
 }
