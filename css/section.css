@@ -3,18 +3,21 @@
     box-shadow: 0px 0px 5px hsl(240, 7%, 97%);
     background: hsl(0, 0%, 100%);
 }
+
 .section__header {
     border-bottom: 2px solid hsl(0, 26%, 96%);
     margin: 0;
     padding: 20px;
     font-size: 20px;
 }
+
 @media(max-width: 767px) {
     .section__header {
         display: flex;
         justify-content: center;
     }
 }
+
 .section__container {
     padding: 20px;
 }

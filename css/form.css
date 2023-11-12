@@ -3,6 +3,7 @@
     grid-template-columns: 1fr auto;
     grid-gap: 10px;
 }
+
 @media(max-width: 767px) {
     .form {
         grid-template-columns: 1fr;
@@ -13,6 +14,7 @@
     padding: 10px;
     border: 2px solid hsl(45, 17%, 95%);
 }
+
 .form__button {
     padding: 10px;
     background: hsl(180, 100%, 25%);
@@ -20,6 +22,7 @@
     border: none;
     cursor: pointer;
 }
+
 .form__button:hover {
     background: hsl(180, 100%, 25%);
 }

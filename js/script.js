@@ -4,34 +4,34 @@
     const addNewTask = (newTaskContent) => {
         tasks.push({
             content: newTaskContent,
-        })
+        });
         render();
     };
 
     const removeTask = (taskIndex) => {
-        tasks.splice(taskIndex, 1)
+        tasks.splice(taskIndex, 1);
         render();
-    }
+    };
 
     const toggleTaskDone = (taskIndex) => {
         tasks[taskIndex].done = !tasks[taskIndex].done;
         render();
-    }
+    };
 
     const bindEvents = () => {
-        const removeButtons = document.querySelectorAll(".js-remove");
-        
-        removeButtons.forEach((removeButton, index) => {
-            removeButton.addEventListener("click", () => {
-                removeTask(index);
-            });
-        });
-
         const toggleDoneButtons = document.querySelectorAll(".js-done");
         
         toggleDoneButtons.forEach((toggleDoneButton, index) => {
             toggleDoneButton.addEventListener("click", () => {
                 toggleTaskDone(index);
+            });
+        });
+
+        const removeButtons = document.querySelectorAll(".js-remove");
+        
+        removeButtons.forEach((removeButton, index) => {
+            removeButton.addEventListener("click", () => {
+                removeTask(index);
             });
         });
     }
@@ -41,17 +41,22 @@
 
         for (const task of tasks) {
             htmlString += `
-               <li class="task_item">
-                   <button class="task__button task__button--done js-done">
+               <li class="tasks_item js-task"
+               >
+                   <button class="tasks__button tasks_button--done js-done">
                    ${task.done ? "✔" : ""}
-                >/button>
-                <span class="task__content${task.done ? " task__content--done" : ""}">${task.content}</span>
-                <button class="task__button task__button--remove js-remove"></button>
+                </button>
+                <span class="tasks__content${ task.done ? " tasks__content--done" : ""}">
+                   ${task.content}
+                   </span>
+                <button class="tasks__button tasks__button--remove js-remove">
+                  🗑
+                </button>
                </li>
             `;
-        }
+        };
 
-        document.querySelector(".js-task").innerHTML = htmlString;
+        document.querySelector(".js-tasks").innerHTML = htmlString;
 
         bindEvents();
     };
@@ -64,7 +69,7 @@
         const newTaskContent = newTaskItem.value.trim();
         
         
-        if (newTaskContent === "") {
+        if (newTaskContent !== "") {
             addNewTask(newTaskContent);
             newTaskItem.value = "";
         }
