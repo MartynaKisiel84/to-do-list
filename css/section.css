@@ -1,7 +1,7 @@
 .section {
     margin: 20px 0;
     box-shadow: 0px 0px 5px hsl(240, 7%, 97%);
-    background: hsl(0, 0%, 100%);
+    background: hsl(0, 17%, 95%);
 }
 
 .section__header {
