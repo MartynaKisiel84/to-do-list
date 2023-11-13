@@ -1,11 +1,11 @@
 .section {
     margin: 20px 0;
-    box-shadow: 0px 0px 5px hsl(240, 7%, 97%);
-    background: hsl(0, 17%, 95%);
+    box-shadow: 0px 0px 5px hsl(240, 6%, 93%);
+    background: hsl(0, 20%, 99%);
 }
 
 .section__header {
-    border-bottom: 2px solid hsl(0, 26%, 96%);
+    border-bottom: 2px solid hsl(0, 9%, 91%);
     margin: 0;
     padding: 20px;
     font-size: 20px;
