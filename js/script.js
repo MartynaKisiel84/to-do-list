@@ -43,7 +43,7 @@
             htmlString += `
                <li class="tasks_item js-task"
                >
-                   <button class="tasks__button tasks_button--done js-done">
+                   <button class="tasks__button tasks__button--done js-done">
                    ${task.done ? "✔" : ""}
                 </button>
                 <span class="tasks__content${ task.done ? " tasks__content--done" : ""}">
