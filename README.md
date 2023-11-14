@@ -15,10 +15,7 @@ https://martynakisiel84.github.io/to-do-list/
 - You can add more tasks in the same way.
 - If you want, you can delete the task by clicking the red trash button.
 
-![Martyna](https://github.com/MartynaKisiel84/to-do-list/blob/main/images/To-do-list%20(2).png?raw=true)
-
 ![Martyna](C:\dev\to-do-list\images\Animation.gif)
-
 
 ## Used technologies:
 - HTML
