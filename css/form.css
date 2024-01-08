@@ -21,8 +21,10 @@
     color: white;
     border: none;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .form__button:hover {
-    background: hsl(180, 100%, 25%);
+    background: hsl(180, 100%, 35%);
+    transform: scale(1.1);
 }
