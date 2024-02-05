@@ -21,7 +21,7 @@
         render();
     };
 
-    const markAllTasksDone = (index) =>
+    const markAllTasksDone = () =>
         tasks = tasks.map((task) => ({
             ...task,
             done: true,
@@ -77,7 +77,7 @@
                 </button>
                </li>
             `;
-        };
+        }
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
     };
@@ -85,7 +85,7 @@
     const renderButtons = () => {
         const buttonsElement = document.querySelector(".js-buttons");
 
-        if (!tasks.lenght) {
+        if (!tasks.length) {
             buttonsElement.innerHTML = "";
             return;
         }
