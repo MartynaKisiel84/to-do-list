@@ -109,7 +109,7 @@
             markAllDoneButton.addEventListener("click", markAllDone);
         }
 
-        const toggleHideDoneButton = document.querySelector("js.toggleHideDoneTasks");
+        const toggleHideDoneButton = document.querySelector(".js-toggleHideDoneTasks");
 
         if (toggleHideDoneButton) {
             toggleHideDoneButton.addEventListener("click", toggleHideDoneTasks)
@@ -130,7 +130,7 @@
         event.preventDefault();
 
         const newTaskElement = document.querySelector(".js-newTask");
-        const newTaskContent = newTaskItem.value.trim();
+        const newTaskContent = newTaskElement.value.trim();
 
         if (newTaskContent !== "") {
             addNewTask(newTaskContent);
