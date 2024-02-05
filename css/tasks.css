@@ -23,17 +23,19 @@
     border: none;
     width: 30px;
     height: 30px;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
-.tasks__button--done {
+.tasks__button--toggleDone {
     background: hsl(120, 63%, 25%);
 }
 
-.tasks__button--done:hover {
+.tasks__button--toggleDone:hover {
     background: hsl(120, 69%, 27%);
 }
 
-.tasks__button--done:active {
+.tasks__button--toggleDone:active {
     background: hsl(120, 69%, 27%);
 }
 
@@ -47,5 +49,9 @@
 
 .tasks__button--remove:active {
     background: hsl(0, 88%, 53%);
+}
+
+.tasks__hidden {
+    display: none;
 }
 

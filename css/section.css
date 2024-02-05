@@ -6,11 +6,26 @@
 
 .section__header {
     border-bottom: 2px solid hsl(0, 40%, 98%);
-    margin: 0;
     padding: 20px;
-    font-size: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.section__container {
+@media (max-width: 767px) {
+    .section__header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.section__title {
+    font-size: 20px;
+    margin: 0;
+}
+
+.section__body {
     padding: 20px;
 }
