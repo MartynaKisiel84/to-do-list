@@ -53,7 +53,6 @@
                 toggleTaskDone(taskIndex);
             });
         });
-
     };
 
     const renderTasks = () => {
