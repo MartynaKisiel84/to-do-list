@@ -13,7 +13,6 @@ https://martynakisiel84.github.io/to-do-list/
 - Enter a task content.
 - Click "Dodaj zadanie" button to add your task to the list of tasks.
 - Click on a task to mark it as done.
-- Click the red trash button to remove task.
 - Click "Ukryj ukończone" to hide done taks.
 - Click "Ukończ wszystkie" to check all tasks.
 
